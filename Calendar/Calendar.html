@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <title>Calendar</title>
+    <link href="css/caln2.css" rel="stylesheet" />
+	<meta charset="utf-8" />
+</head>
+<body>
+    <section class="body">
+        <section class="left">
+            <select name="" id="select">
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+            </select>
+            <ul id="selectMonth">
+                <li value="0">Jan</li>
+                <li value="1">Feb</li>
+                <li value="2">March</li>
+                <li value="3">Apr</li>
+                <li value="4">May</li>
+                <li value="5">June</li>
+                <li value="6">July</li>
+                <li value="7">Aug</li>
+                <li value="8">Sep</li>
+                <li value="9">Oct</li>
+                <li value="10">Nov</li>
+                <li value="11">Dec</li>
+            </ul>
+        </section>
+        <section class="right">
+            <table>
+                <tr class="trTh">
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fir</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="secDev">
+                            <b style="font-size:50px">1</b>
+                            <span class='info zm'>周末</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>2</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>3</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>4</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>5</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>6</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>7</b>
+                            <span class='info zm'>周末</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>8</b>
+                            <span class='info zm'>周末</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>9</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>10</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>11</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>12</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>13</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>14</b>
+                            <span class='info zm'>周末</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>15</b>
+                            <span class='info zm'>周末</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>16</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>17</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>18</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>19</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>20</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>21</b>
+                            <span class='info zm'>周末</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <span class='secDev'>
+                            <b style='font-size:50px'>22</b>
+                            <span class='info zm'>周末</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>23</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>24</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>25</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>26</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>27</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>28</b>
+                            <span class='info zm'>周末</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>29</b>
+                            <span class='info zm'>周末</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>30</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>31</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>32</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>33</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>34</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>35</b>
+                            <span class='info zm'>周末</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>29</b>
+                            <span class='info zm'>周末</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>30</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>31</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>32</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>33</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>34</b>
+                            <span class='info redC'>工作日</span>
+                        </span>
+                    </td>
+                    <td>
+                        <span class='secDev'>
+                            <b style='font-size:50px'>35</b>
+                            <span class='info zm'>周末</span>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </section>
+    <script>
+        var Now = new Date();//不能直接有getTimeInfo
+        //var initialTime = new Date(2012, 0, 1);
+        //var initilaTimeMS = initialTime.getTime();
+        $(function () {     //开始时加载
+            
+            var year = Now.getFullYear();
+            var month = Now.getMonth();//0~~11
+            var day = Now.getDate();
+            $("#select").val(year);
+            var mon = $("#selectMonth").children();
+          //这个也太烦了 css中再加个 selectedMonth类的样式就行了
+            //for (i = 0;i<mon.length;i++){
+            //    if (i==month) {
+            //        $(mon[i]).css("background", "red").addClass("selectedMonth");
+            //    }
+            //    else {
+            //        $(mon[i]).css("background", "white");
+            //    }
+            //}
+            //很是巧妙**2**
+            $(mon[month]).addClass("selectedMonth");
+            getTimeInfo(year, month);
+            //getTimeInfo(2012, 1);
+        });
+        $("#select").on("change", function () {
+            var year = $("#select").val();
+            var month = $(".selectedMonth").val();
+            getTimeInfo(year, month);
+      
+        })
+        //**3**
+        $("#selectMonth").on("click", "li", function () {
+            var year = $("#select").val();
+            $(".selectedMonth").removeClass("selectedMonth");
+            var month = $(this).addClass("selectedMonth").val();
+            getTimeInfo(year, month);
+        })
+        /**
+         初始化日历 并定位
+         *
+         @param {Number} year
+         @param {Number} month
+         *
+         */
+        function getTimeInfo(year,month) {
+            //太复杂了 完全可以不用这样
+            //var chooseTimeMS = (new Date(year, month, 1)).getTime();
+            //隐约感觉floor有问题?? 还有和闰年有关吗 调试一下days的值
+            //var days = Math.floor((chooseTimeMS - initilaTimeMS) / (1000 * 60 * 60 * 24));
+            //var week = days % 7;//0位周日 6位周六，以此类推
+            //**1**
+            var chooseTime = new Date(year, month, 1);
+            var firstDayWeek = chooseTime.getDay();//0为周日，6为周六
+            var monthdays = [31, null, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month] || ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0) ? 29 : 28);
+            setMonthAndWeek(monthdays, firstDayWeek);
+            setToday(year, month, firstDayWeek);
+        }
+        /**
+         * 初始化month 和 week
+         * @param {Number} monthdays
+         * @param {Number} week
+         */
+       
+        function setMonthAndWeek(monthdays,week) {
+            var list = $(".secDev");
+            for (var i = 0; i < list.length; i++) {
+                if (i < week||(i-week+1)>monthdays) {
+                    //隐藏并且不占用元素
+                    //$(list[i]).parent().css("display","none") 
+                    // $(list[i]).parent().toggle();
+                    //隐藏但占用元素空间
+                    $(list[i]).parent().css("visibility", "hidden");
+                   
+                }
+                else {
+                    $(list[i]).parent().css("visibility", "visible");
+                    $(list[i]).children("b").text(i - week + 1);
+                   
+                }
+            }
+        }
+        /**
+         将日历定位到今天
+         *
+         @param {Number} year
+         @param {Number} month
+         @param {Number} week
+         */
+        function setToday(year, month, week) {
+            //最好还是先判断一下是否存在*5*
+            if ($(".today")) {
+                $(".today").removeClass("today");
+            }
+            //把括号忘了  没括号则表示那个函数 还是可以比较是否相等的 所以不报错**6**
+            if (year==Now.getFullYear()&&month==Now.getMonth()) {
+                var day = Now.getDate();
+                //注意了**4**
+                $($(".secDev")[day + week - 1]).parent().addClass("today");
+            }
+
+        }
+    </script>
+</body>
+</html>

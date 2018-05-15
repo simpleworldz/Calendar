@@ -1,0 +1,144 @@
+﻿body,div,p,b,form,ul,li,ol,table,tr,th,td,a,span,dd,dt,section,nav,button {
+    padding:0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+section.body {
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    transform:translateY(20%) ;
+}
+section.left {
+    width: 200px;
+    height:600px;
+    float: left;
+    padding-left: 10px;
+}
+
+#select {
+    margin-top: 20px;
+    width: 100px;
+    height: 27px;
+    cursor: pointer;
+}
+
+section.left ul{
+    width: 155px;
+    margin-top: 21px;
+    text-align: center;
+}
+
+section.left ul li {
+    border:1px solid #cccccc;
+    height: 50px;
+    line-height: 50px;
+    width: 75px;
+    float: left;
+    margin-top: -1px;
+    cursor: pointer;
+}
+
+section.left ul li:hover {
+    background: red;
+    color: #ffffff;
+}
+
+section.left ul li:nth-child(2n){
+    margin-left: -1px;
+}
+
+section.right {
+    width: 800px;
+    height: 600px;
+    margin-left: 211px;
+}
+
+.trTh th {
+    width:200px;
+    padding-bottom:5px;
+    background-color:blue;
+}
+
+tr td {
+    height: 88px;
+    text-align: center;
+}
+tr td:first-child .secDev,tr td:last-child .secDev{
+    background: greenyellow;
+}
+tr td .secDev{
+    position: relative;
+    width: 92%;
+    height: 98%;
+    margin-top: 4%;
+    margin-left: 4%;
+    display: block;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+tr td .secDev h5 {
+    height: 0;
+    margin-top: 5px;
+}
+
+tr td .secDev span,tr td .secDev p {
+    font-size: 12px;
+}
+
+.info {
+    position: absolute;
+    text-align: center;
+    bottom: -1px;
+    right: -1px;
+    width: 50px;
+    border: 1px solid #cccccc;
+}
+
+.zm {
+    color:red;
+}
+
+.redC {
+    background:red;
+    color:#fff;
+}
+
+.filter {
+    opacity:0.3;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: contents;
+}
+
+#changeMonth {
+    position: relative;
+    top: 20px;
+}
+
+#changeMonth button {
+    padding: 4px 10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    background: #fff;
+}
+
+#changeMonth button:hover {
+    background: yellowgreen;
+}
+.selectedMonth{
+    background-color:red;
+}
+.today{
+    background-color:Highlight;
+}
